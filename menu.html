@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    body{
+        background-image: url(https://images.unsplash.com/photo-1504289680139-740413aa1de6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around ;
+    }
+    .mli{
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(17, 17, 16);
+    }
+    .mli:hover{
+        color: darkorange;
+    }
+    .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    width: 330px;
+    height: 190px;
+    border:2px solid black;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .h3{
+    text-align: center;
+    border: solid rgba(230, 228, 228, 0.781);
+    background-color: rgba(230, 228, 228, 0.781);
+    width: 200px;
+    height: 150px;
+    }
+    
+
+</style>
+
+
+    <div class="menu" >
+        <div class="card" style="background-color: rgba(41, 148, 110, 0.61);">
+            <h3>Espresso Creations</h3>
+
+            <div style="display: flex;justify-content: space-between;">
+                <li class="mli">Cafe Latte</li>
+                <button style="margin-left: 10px; color: rgb(98, 65, 25);background-color: rgb(146, 219, 146);border: 0px;" class="add " onclick="addToCart('Cafe Latte', 15)">Add</button>
+                <button  style="margin-left: 10px;color: rgb(228, 220, 220);background-color: rgb(118, 15, 15);border: 0px;"  onclick="deleteFromCart()">Delete</button>
+            </div>
+         <div style="display: flex;justify-content: space-between;">
+            <li class="mli">Cappuccino</li>
+            <button  style="margin-left: 10px;color: rgb(98, 65, 25);background-color: rgb(146, 219, 146);border: 0px;" class="add " onclick="addToCart('Cappuccino', 20)">Add</button>
+            <button  style="margin-left: 10px;color: rgb(228, 220, 220);background-color: rgb(118, 15, 15);border: 0px;" onclick="deleteFromCart()">Delete</button>
+         </div>
+           
+          
+        </div>
+        <div class="card" style="background-color: rgba(41, 148, 110, 0.61);">
+            <h3>Smoothies</h3>
+    <div style="display: flex;justify-content: space-between;">
+                <li class="mli">Blueberry Banana</li>
+                <button  style="margin-left: 10px;color: rgb(98, 65, 25);background-color: rgb(146, 219, 146);border: 0px;" class="add "onclick="addToCart('Blueberry Banan', 20)" >Add</button>
+                <button  style="margin-left: 10px;color: rgb(228, 220, 220);background-color: rgb(118, 15, 15);border: 0px;" onclick="deleteFromCart()">Delete</button>
+            </div>
+    <div style="display: flex;justify-content: space-between;">
+        <li class="mli">Mixed Berries</li>
+        <button  style="margin-left: 10px;color: rgb(98, 65, 25);background-color: rgb(146, 219, 146);border: 0px;"  onclick="addToCart('Mixed Berries', 20)">Add</button>
+        <button   style="margin-left: 10px;color: rgb(228, 220, 220);background-color: rgb(118, 15, 15);border: 0px;" onclick="deleteFromCart()">Delete</button>
+      </div>
+           
+        </div>
+       
+    </div>
+
+
+    <div class="shop" style="background-color: rgba(238, 244, 242, 0.61); width: 500px;height: 200px; margin-left: 480px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">  </div>
+    
+
+    <script src="./menu.js"></script>
+</body>
+</html>
